@@ -3,14 +3,19 @@ body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(166, 193, 209);
+    padding-top: 80px; /* Adding padding to body to ensure content isn't hidden behind the fixed header */
 }
 
 header {
     width: 100%;
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
     background-color: rgb(69, 93, 107);
     text-align: center;
     padding: 20px 0;
     color: white;
+    z-index: 1000; /* Ensures the header stays on top of other content */
 }
 
 header h1 {
@@ -26,6 +31,7 @@ header h1 {
     justify-content: center;
     padding: 10px 0;
     box-sizing: border-box; /* Includes padding in width calculation */
+    margin-top: 70px; /* Adjusted to prevent overlap with fixed header */
 }
 
 .navbar ul {
@@ -114,4 +120,5 @@ footer a:hover {
         font-size: 1em;
     }
 }
+
 
