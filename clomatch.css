@@ -2,7 +2,6 @@
 body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 255, 255);
     padding-top: 80px; /* Adding padding to body to ensure content isn't hidden behind the fixed header */
 }
 
